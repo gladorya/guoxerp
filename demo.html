@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guoxerp Poster</title>
+<style>
+body { font-family: -apple-system, sans-serif; background: #111; color: #fff; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
+.app { background: #1a1a2e; border-radius: 12px; padding: 40px; max-width: 500px; width: 90%; text-align: center; }
+.logo { font-size: 48px; margin-bottom: 10px; }
+h1 { color: #00a884; margin: 0 0 30px 0; }
+.btn { background: #00a884; color: #111; border: none; padding: 12px 30px; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; margin: 10px; width: 200px; }
+.btn:hover { background: #00c49a; }
+.btn:disabled { background: #333; color: #666; }
+input[type="text"] { background: #0d0d1a; border: 1px solid #333; color: #fff; padding: 12px; border-radius: 6px; width: 80%; margin: 10px 0; }
+.status { margin-top: 20px; padding: 10px; border-radius: 6px; display: none; }
+.success { background: #1a3a2a; color: #00a884; }
+.connected { color: #00a884; font-size: 14px; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<div class="app">
+<div class="logo">🎬</div>
+<h1>Guoxerp Poster</h1>
+<div class="connected" id="connected" style="display:none">✓ Connected as @guoxerp</div>
+<button class="btn" id="login" onclick="login()">Connect TikTok</button>
+<div id="posting" style="display:none">
+<input type="text" placeholder="Video description..." id="desc">
+<br>
+<button class="btn" onclick="post()">Post Video</button>
+</div>
+<div class="status" id="status"></div>
+</div>
+<script>
+function login() {
+document.getElementById('login').textContent = 'Connecting...';
+setTimeout(function() {
+document.getElementById('login').style.display = 'none';
+document.getElementById('connected').style.display = 'block';
+document.getElementById('posting').style.display = 'block';
+}, 1500);
+}
+function post() {
+var s = document.getElementById('status');
+s.className = 'status success';
+s.style.display = 'block';
+s.textContent = '✓ Video posted to TikTok successfully';
+document.getElementById('desc').value = '';
+}
+</script>
+</body>
+</html>
