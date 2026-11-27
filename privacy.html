@@ -3,69 +3,90 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Guoxerp Poster</title>
-<link rel="icon" type="image/png" href="favicon.png">
-<style>
-  body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#e8e9ee;background:#0e1117}
-  header{background:linear-gradient(160deg,#14161f,#1a1d29);border-bottom:1px solid #232735;color:#fff;padding:34px 20px;text-align:center}
-  h1{margin:0;font-size:26px}
-  main{max-width:720px;margin:0 auto;padding:32px 20px;line-height:1.75}
-  p{line-height:1.75}
-  h2{color:#2ebcde;font-size:19px;margin-top:28px}
-  footer{border-top:1px solid #232735;padding:22px;text-align:center;font-size:14px;color:#8a8fa3}
-  footer a{color:#2ebcde;margin:0 10px;text-decoration:none}
-</style>
+<title>Privacy Policy · Guoxerp Poster</title>
+<meta name="description" content="What data Guoxerp Poster accesses, where it is stored, what is sent to TikTok, and what is never collected.">
+<meta property="og:title" content="Guoxerp Poster · privacy policy">
+<meta property="og:image" content="icon1024.png">
+<link rel="icon" type="image/png" href="icon1024.png">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header><h1>Privacy Policy</h1></header>
+
+<header>
+  <img src="icon1024.png" alt="Guoxerp Poster logo">
+  <h1>Privacy Policy</h1>
+  <p class="tag">What the application touches, where it is stored, and what never leaves your machine. Last updated: November 27, 2026.</p>
+</header>
+<nav class="top">
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="guide.html">User guide</a>
+  <a href="faq.html">FAQ</a>
+  <a href="changelog.html">Changelog</a>
+  <a href="support.html">Support</a>
+</nav>
+
 <main>
-  <p><strong>Last updated: November 21, 2026.</strong> Guoxerp Poster ("the app") is a
-  desktop tool that publishes videos to TikTok on behalf of the authorized account
-  owner. This policy explains exactly what data the app touches and what it does not.</p>
 
-  <h2>1. What data the app accesses</h2>
-  <ul>
-    <li><strong>TikTok authorization tokens</strong> — obtained through TikTok's official
-    Login Kit when you authorize your own account. These are required to upload on your
-    behalf.</li>
-    <li><strong>Video files and captions</strong> — the files you select for upload and
-    the text you write for them.</li>
-    <li><strong>Basic profile information</strong> — your TikTok display name and open
-    identifier, used to show which account is connected.</li>
-  </ul>
+<h2>The short version</h2>
+<div class="card">
+<p>Guoxerp Poster runs on your computer. Your tokens, videos, captions and posting history stay on your machine, in the application's own folder. There is no account on our side, no cloud storage, no analytics and no advertising. The only external service the application ever talks to is TikTok, through its official APIs, to do exactly what you asked it to do: publish your videos and read your account's public statistics.</p>
+</div>
 
-  <h2>2. Where your data lives</h2>
-  <p>Everything is stored <strong>locally on your own computer</strong>. The app has no
-  central server that collects your data. Tokens never leave your device except in the
-  direct API calls to TikTok's own endpoints needed to perform the upload you requested.</p>
+<h2>What the application accesses</h2>
+<div class="card">
+<ul>
+  <li><strong>A publishing token</strong> issued by TikTok when you connect an account through Login Kit. This is what lets the application publish on that account. It is stored locally and refreshed automatically before it expires.</li>
+  <li><strong>Your account's public identity</strong> as TikTok reports it once you authorize: username, display name and profile picture. Only for accounts you connect yourself.</li>
+  <li><strong>The video files you choose</strong> to upload, plus the caption and title you write or approve for each one.</li>
+  <li><strong>Statistics for videos published through the application</strong>: follower count, video count, views and likes, read from TikTok when the dashboard refreshes.</li>
+  <li><strong>Local settings</strong>: schedules, account list, application preferences.</li>
+</ul>
+</div>
 
-  <h2>3. What we never do</h2>
-  <ul>
-    <li>We do not sell, rent, or share your data with third parties.</li>
-    <li>We do not read your TikTok messages, contacts, or browsing activity.</li>
-    <li>We do not post, like, comment, or follow without your explicit action.</li>
-    <li>We do not use your content for advertising or model training.</li>
-  </ul>
+<h2>What the application never touches</h2>
+<div class="card">
+<p>Your TikTok password (authorization happens in TikTok's own window, so the application never sees it), your private messages, your other social accounts, files you did not select, contacts, browsing history, or any data from accounts you did not connect. There is no telemetry: the application does not phone home about anything, ever.</p>
+</div>
 
-  <h2>4. Content ownership</h2>
-  <p>You keep every right to the videos you publish through the app. Guoxerp Poster
-  claims no license over your content beyond the technical upload you request.</p>
+<h2>What is sent to TikTok</h2>
+<div class="card">
+<p>Only what publishing requires: the video file, its caption text, and the API requests that upload it and read back your account's statistics. Once data reaches TikTok, TikTok's own <a href="https://www.tiktok.com/legal/page/row/privacy-policy-en" rel="noopener">privacy policy</a> governs how it is handled. No other third party receives anything from the application, because there is nothing else connected.</p>
+</div>
 
-  <h2>5. Data deletion</h2>
-  <p>Deleting the app's data folder removes all stored tokens locally. To revoke the
-  app's access to your TikTok account entirely, open TikTok → Settings → Security and
-  permissions → Manage app authorizations, and remove Guoxerp Poster. You can also
-  contact us (see footer of the <a style="color:#9989fa" href="index.html">homepage</a>) and we will confirm
-  that no server-side copy of your data exists — because there is none.</p>
+<h2>Where data lives and how to delete it</h2>
+<div class="card">
+<p>Everything the application stores lives in its own folder on your computer. To erase all of it: disconnect your accounts inside the application, delete the application folder, and revoke the authorizations in your TikTok settings under Security and permissions, then Manage app authorizations. Revoking stops the token from working immediately, even before the local data is removed.</p>
+<p>Removing a published video removes it from TikTok as well, which you can do from inside the application by video id.</p>
+</div>
 
-  <h2>6. Changes</h2>
-  <p>If this policy changes, the updated date at the top will change with it. Material
-  changes will be announced in the app before they take effect.</p>
+<h2>Children</h2>
+<div class="card">
+<p>The application is not directed at children under 13 and is not meant for them. Accounts connected through the application must already meet TikTok's own age requirements, since authorization happens inside TikTok's own system.</p>
+</div>
+
+<h2>Changes to this policy</h2>
+<div class="card">
+<p>If the application ever starts touching new categories of data, this page changes first and the change is noted in the <a href="changelog.html">changelog</a> of the version that introduces it. What is written here describes what the current version actually does, not an aspiration.</p>
+</div>
+
+<h2>Contact</h2>
+<div class="card">
+<p>Questions about this policy go through the <a href="support.html">support page</a> or the project's GitHub page. Takedown requests for a specific published video should include the video id and are treated as the highest priority.</p>
+</div>
+
 </main>
 <footer>
-  <a style="color:#9989fa" href="index.html">Home</a>
-  <a style="color:#9989fa" href="terms.html">Terms of Service</a>
-  <span style="margin:0 10px">© 2026 Guoxerp Poster</span>
+  <a href="index.html">Home</a>
+  <a href="features.html">Features</a>
+  <a href="guide.html">User guide</a>
+  <a href="faq.html">FAQ</a>
+  <a href="changelog.html">Changelog</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="terms.html">Terms of Service</a>
+  <a href="support.html">Support</a>
+  <br><br>
+  <span>© 2026 Guoxerp Poster. Not affiliated with or endorsed by TikTok or ByteDance Ltd. All product names and trademarks belong to their respective owners.</span>
 </footer>
 </body>
 </html>
