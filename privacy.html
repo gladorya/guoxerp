@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy · Guoxerp Poster</title>
-<meta name="description" content="What data Guoxerp Poster accesses, where it is stored, what is sent to TikTok, and what is never collected.">
+<meta name="description" content="The complete data practices of Guoxerp Poster: every category of data the application handles, the TikTok permissions it requests, storage, retention, security, and your rights under GDPR and CCPA.">
 <meta property="og:title" content="Guoxerp Poster · privacy policy">
 <meta property="og:image" content="icon1024.png">
 <link rel="icon" type="image/png" href="icon1024.png">
@@ -15,7 +15,7 @@
 <header>
   <img src="icon1024.png" alt="Guoxerp Poster logo">
   <h1>Privacy Policy</h1>
-  <p class="tag">What the application touches, where it is stored, and what never leaves your machine. Last updated: November 27, 2026.</p>
+  <p class="tag">The complete data practices of Guoxerp Poster, in plain language. Effective date: November 27, 2026.</p>
 </header>
 <nav class="top">
   <a href="index.html">Home</a>
@@ -28,51 +28,162 @@
 
 <main>
 
-<h2>The short version</h2>
-<div class="card">
-<p>Guoxerp Poster runs on your computer. Your tokens, videos, captions and posting history stay on your machine, in the application's own folder. There is no account on our side, no cloud storage, no analytics and no advertising. The only external service the application ever talks to is TikTok, through its official APIs, to do exactly what you asked it to do: publish your videos and read your account's public statistics.</p>
+<div class="card" id="toc">
+  <h3 style="margin-top:0">Contents</h3>
+  <ul class="small">
+    <li><a href="#who">1. Who we are</a></li>
+    <li><a href="#definitions">2. Definitions</a></li>
+    <li><a href="#short">3. The short version</a></li>
+    <li><a href="#collect">4. What data the application handles</a></li>
+    <li><a href="#permissions">5. TikTok permissions the application requests</a></li>
+    <li><a href="#never">6. What the application never touches</a></li>
+    <li><a href="#storage">7. Where your data lives and how to delete it</a></li>
+    <li><a href="#leaves">8. What leaves your machine</a></li>
+    <li><a href="#website">9. This website</a></li>
+    <li><a href="#legal">10. Legal bases for processing (GDPR)</a></li>
+    <li><a href="#retention">11. Data retention</a></li>
+    <li><a href="#rights">12. Your rights</a></li>
+    <li><a href="#security">13. Security</a></li>
+    <li><a href="#children">14. Children</a></li>
+    <li><a href="#international">15. International users</a></li>
+    <li><a href="#changes">16. Changes to this policy</a></li>
+    <li><a href="#contact">17. How to contact us</a></li>
+  </ul>
 </div>
 
-<h2>What the application accesses</h2>
+<h2 id="who">1. Who we are</h2>
 <div class="card">
+<p>Guoxerp Poster is a desktop application for TikTok creators, built and maintained by an independent developer ("we", "us", "the developer"). This policy covers both the application and this website. The application publishes videos to TikTok through TikTok's official Login Kit and Content Posting API, on accounts you connect yourself. We are not affiliated with, sponsored by or endorsed by TikTok or ByteDance Ltd., and no endorsement by them is claimed or implied.</p>
+<p>This policy is written to describe what the application actually does, not what we would like it to do. If the application ever changes how it handles data, this page changes with the version that ships the change, and the change is noted in the <a href="changelog.html">changelog</a>.</p>
+</div>
+
+<h2 id="definitions">2. Definitions</h2>
+<div class="card"><ul>
+  <li><strong>The application</strong> or <strong>the app</strong>: Guoxerp Poster, the desktop software you install on your own computer.</li>
+  <li><strong>TikTok</strong>: the social platform operated by TikTok Technology Limited and its corporate affiliates.</li>
+  <li><strong>Token</strong>: the authorization credential TikTok issues to the application when you connect an account through Login Kit. A token is what lets the application publish on that account, and it can be revoked at any time.</li>
+  <li><strong>Content</strong>: the videos, captions, titles, hashtags and schedules you create, select or publish through the application.</li>
+  <li><strong>Local data</strong>: everything the application stores on your computer, in its own folder.</li>
+  <li><strong>Personal data</strong>: information that relates to you as an identified or identifiable person, such as your TikTok username or your account's follower count.</li>
+  <li><strong>The service</strong>: the application's functions taken together: authorization, uploading, publishing, scheduling, statistics and post management.</li>
+</ul></div>
+
+<h2 id="short">3. The short version</h2>
+<div class="card">
+<p>The application runs on your computer. Your tokens, videos, captions and posting history stay on your machine, in the application's own folder. We operate no servers that hold your data, keep no backups of your content, and run no analytics or advertising of any kind. The only external service the application ever talks to is TikTok, through its official APIs, to do exactly what you asked it to do: publish your videos and read your account's public statistics.</p>
+<p>If you remember one sentence from this policy, make it this one: <strong>we have nothing to give away, because nothing of yours ever reaches us.</strong></p>
+</div>
+
+<h2 id="collect">4. What data the application handles</h2>
+<div class="card">
+<p><strong>4.1 Authorization data.</strong> When you connect a TikTok account, TikTok issues the application a publishing token. The token is stored locally, used only to publish your videos and read your account's statistics, and refreshed automatically before it expires. Tokens carry only the permissions listed in section 5, and nothing else.</p>
+<p><strong>4.2 TikTok account data.</strong> For each account you connect, the application reads what TikTok's API reports about that account: username, display name, profile picture, follower count, video count, and the view and like counts of videos published through the application. This data is displayed on your dashboard and stored locally as part of your posting history.</p>
+<p><strong>4.3 Content you provide.</strong> The video files you choose to upload, the captions and titles you write or approve, the hashtags you add, and the schedules you set. These are yours; the application handles them as instructions from you, nothing more.</p>
+<p><strong>4.4 Media the application derives from your clips.</strong> For clips with speech, the application transcribes the audio, translates it if needed, and generates English titles and captions that describe the moment. All transcription, translation and generation happens on your machine, on your hardware, under your control. The application does not send your clips or their transcripts anywhere for processing.</p>
+<p><strong>4.5 Local operational data.</strong> Application settings, your list of connected accounts, posting history, upload records, error notes needed to diagnose failed uploads, and cached text such as generated titles. All of it lives in the application's own folder and all of it is deletable by deleting that folder.</p>
+</div>
+
+<h2 id="permissions">5. TikTok permissions the application requests</h2>
+<div class="card">
+<p>The application requests the narrowest set of TikTok permissions that publishing and statistics require. You see the exact list on TikTok's authorization screen before anything is approved, and you can decline there. The table below maps each permission to its purpose:</p>
+<table>
+  <tr><th>Permission shown on TikTok's consent screen</th><th>What it allows the application to do</th><th>Why it is needed</th></tr>
+  <tr><td>Basic profile information</td><td>Read the connected account's username, display name and profile picture</td><td>Show which account is connected on the dashboard</td></tr>
+  <tr><td>Profile statistics</td><td>Read follower and like counts for the connected account</td><td>The performance dashboard reads live numbers</td></tr>
+  <tr><td>Video list</td><td>Read the account's published videos and their view and like counts</td><td>Track and manage posts published through the application</td></tr>
+  <tr><td>Video publishing</td><td>Upload videos as direct posts or as drafts to your TikTok inbox</td><td>The core function of the application</td></tr>
+</table>
+<p>No permission for reading private messages, comments, followers lists, or any account other than the one being connected is requested, ever. When a permission is no longer needed because you disconnected the account, the token is deleted locally, and revoking on TikTok's side ends it there as well.</p>
+</div>
+
+<h2 id="never">6. What the application never touches</h2>
+<div class="card"><ul>
+  <li>Your TikTok password. Authorization happens inside TikTok's own window; the application never sees it and has no place to put it.</li>
+  <li>Your private messages, comments, drafts created inside TikTok, or likes.</li>
+  <li>Any TikTok account you did not connect yourself.</li>
+  <li>Files on your computer you did not select for upload.</li>
+  <li>Your contacts, photos, camera, microphone, or precise location.</li>
+  <li>Anything else running on your machine.</li>
+</ul>
+<p>There is no telemetry of any kind: the application does not report usage, errors, crashes or statistics to us, because there is no server of ours to receive them. Nothing about your use of the application is visible to us.</p>
+</div>
+
+<h2 id="storage">7. Where your data lives and how to delete it</h2>
+<div class="card">
+<p>All local data lives in the application's own folder inside your user directory on your computer. The folder contains your tokens, settings, posting history, cached titles, and any application logs. Your operating system's user permissions already protect it: anything another program can see, it can see only because your user account can.</p>
+<p>To erase everything completely:</p>
+<ol>
+  <li>Disconnect your accounts inside the application (this deletes the local tokens).</li>
+  <li>Delete the application's folder from your computer.</li>
+  <li>Revoke the application's authorizations in your TikTok settings, under Security and permissions, then Manage app authorizations. Revoking stops every token from working immediately on TikTok's side, even if a local copy were somehow left behind.</li>
+</ol>
+<p>Removing an individual published video removes it from TikTok and can be done from inside the application by entering its video id.</p>
+</div>
+
+<h2 id="leaves">8. What leaves your machine</h2>
+<div class="card">
+<p>The only network traffic the application generates is direct API requests to TikTok's official endpoints: uploading a video you selected, publishing or drafting it, checking its status, reading your account's statistics, and removing a post you asked to remove. Everything travels over HTTPS. The list of permitted destination hosts is fixed inside the application, so it cannot be pointed anywhere else, and it contains only TikTok's API hosts.</p>
+<p>No request goes to us, to an advertising network, to an analytics service, to a crash reporting service, or to any other destination. There is no intermediary server between your machine and TikTok.</p>
+</div>
+
+<h2 id="website">9. This website</h2>
+<div class="card">
+<p>This website is a set of static pages hosted by GitHub Pages, a service of GitHub, Inc. When you visit, GitHub receives the standard technical data every web server receives (your IP address, browser type, and request timestamps) and handles it under GitHub's own privacy policy, which you can read on GitHub's site.</p>
+<p>The website sets no cookies of its own, embeds no analytics, loads no advertising, and offers no forms. We do not know who visits this site and have no way to find out. Downloading the application happens from releases the developer publishes; that download is between you and the distribution channel, and no account or email is required by us.</p>
+</div>
+
+<h2 id="legal">10. Legal bases for processing (GDPR)</h2>
+<div class="card">
+<p>For users in the EU, the EEA and the UK, the application's processing rests on these bases under the General Data Protection Regulation:</p>
 <ul>
-  <li><strong>A publishing token</strong> issued by TikTok when you connect an account through Login Kit. This is what lets the application publish on that account. It is stored locally and refreshed automatically before it expires.</li>
-  <li><strong>Your account's public identity</strong> as TikTok reports it once you authorize: username, display name and profile picture. Only for accounts you connect yourself.</li>
-  <li><strong>The video files you choose</strong> to upload, plus the caption and title you write or approve for each one.</li>
-  <li><strong>Statistics for videos published through the application</strong>: follower count, video count, views and likes, read from TikTok when the dashboard refreshes.</li>
-  <li><strong>Local settings</strong>: schedules, account list, application preferences.</li>
+  <li><strong>Performance of a contract</strong>: uploading, publishing, scheduling and statistics are the service you asked for when you connected your account.</li>
+  <li><strong>Legitimate interests</strong>: keeping the application secure, preventing abuse of TikTok's APIs, and making the service work reliably.</li>
+  <li><strong>Consent</strong>: requested only where TikTok's authorization flow requires it, and withdrawable at any time by revoking the authorization.</li>
+</ul>
+<p>Because the processing happens on your device, the amount of personal data that ever leaves your control is minimal by design: only what TikTok's API calls require. Data sent to TikTok is processed by TikTok as its own controller, under TikTok's privacy policy and its own legal bases. Where the application is used inside an organization, the user of the account is the controller of the content they publish.</p>
+</div>
+
+<h2 id="retention">11. Data retention</h2>
+<div class="card">
+<p>We hold no data, so we publish no retention schedule for server data: there is none. What exists, and how long it lasts:</p>
+<ul>
+  <li><strong>Local data</strong>: kept until you delete it. Nothing expires behind your back.</li>
+  <li><strong>Tokens</strong>: kept until revoked, by you in TikTok's settings, by disconnecting inside the application, or naturally on expiry. A revoked token stops working immediately.</li>
+  <li><strong>Content you published</strong>: lives on TikTok under TikTok's own retention and removal rules, not ours.</li>
+  <li><strong>Website visits</strong>: visible only to GitHub's infrastructure under GitHub's policy. Nothing reaches us.</li>
 </ul>
 </div>
 
-<h2>What the application never touches</h2>
+<h2 id="rights">12. Your rights</h2>
 <div class="card">
-<p>Your TikTok password (authorization happens in TikTok's own window, so the application never sees it), your private messages, your other social accounts, files you did not select, contacts, browsing history, or any data from accounts you did not connect. There is no telemetry: the application does not phone home about anything, ever.</p>
+<p>Where GDPR applies, you have the rights of access, rectification, erasure, restriction of processing, data portability, objection, and withdrawal of consent. Where the California Consumer Privacy Act as amended applies, you have the rights to know, delete, correct, and to opt out of the sale or sharing of personal data, and you will not be discriminated against for exercising any right.</p>
+<p>Because the application processes locally, you can exercise most of these rights directly and instantly: open the application's folder to see everything held about you (access), edit or delete it (rectification, erasure, portability), and revoke the TikTok authorization to stop all processing connected to your accounts (withdrawal). We never sell personal data and never share it for advertising, so there is nothing to opt out of. For anything that does involve us, use the contact channels in section 17 and include the application version; we answer within thirty days at the latest.</p>
 </div>
 
-<h2>What is sent to TikTok</h2>
+<h2 id="security">13. Security</h2>
 <div class="card">
-<p>Only what publishing requires: the video file, its caption text, and the API requests that upload it and read back your account's statistics. Once data reaches TikTok, TikTok's own <a href="https://www.tiktok.com/legal/page/row/privacy-policy-en" rel="noopener">privacy policy</a> governs how it is handled. No other third party receives anything from the application, because there is nothing else connected.</p>
+<p>The application minimizes what can be leaked because it minimizes what exists: no central database, no cloud copy, no backup of your data on our side. Tokens are stored locally with your operating system's user permissions and carry only the permissions in section 5. All API traffic is TLS encrypted, and destination hosts are pinned to TikTok's official API endpoints.</p>
+<p>If you find a security issue, report it through the project's GitHub page so it can be fixed and noted in the changelog. Please do not include tokens or videos in a public report; describe the issue and we will work with you.</p>
 </div>
 
-<h2>Where data lives and how to delete it</h2>
+<h2 id="children">14. Children</h2>
 <div class="card">
-<p>Everything the application stores lives in its own folder on your computer. To erase all of it: disconnect your accounts inside the application, delete the application folder, and revoke the authorizations in your TikTok settings under Security and permissions, then Manage app authorizations. Revoking stops the token from working immediately, even before the local data is removed.</p>
-<p>Removing a published video removes it from TikTok as well, which you can do from inside the application by video id.</p>
+<p>The application is not directed at children and is not offered to them. You must be at least 13 years old, or the minimum digital consent age in your country, and your TikTok account must already meet TikTok's own age requirements, which are enforced by TikTok during authorization. The application does not knowingly process the data of children. If you believe a child's data has been processed through the application, contact us through section 17 and we will help you erase every trace of it that exists on the device side.</p>
 </div>
 
-<h2>Children</h2>
+<h2 id="international">15. International users</h2>
 <div class="card">
-<p>The application is not directed at children under 13 and is not meant for them. Accounts connected through the application must already meet TikTok's own age requirements, since authorization happens inside TikTok's own system.</p>
+<p>The application processes on your device, so no international transfer of your data happens on our side, because there is no our side to transfer to. The data that does leave your device travels to TikTok, whose international transfer safeguards TikTok documents in its own privacy policy. For users in the EU, the EEA and the UK, this model means the developer receives no personal data at any point, which is the strongest form of data minimization there is.</p>
 </div>
 
-<h2>Changes to this policy</h2>
+<h2 id="changes">16. Changes to this policy</h2>
 <div class="card">
-<p>If the application ever starts touching new categories of data, this page changes first and the change is noted in the <a href="changelog.html">changelog</a> of the version that introduces it. What is written here describes what the current version actually does, not an aspiration.</p>
+<p>This policy is versioned with the application. When a version changes how data is handled, the new policy ships with it, takes effect when that version is released, and the change is described in the changelog entry. Material reductions in privacy protection will never be applied retroactively to data you created with earlier versions, because we hold no data to which a change could retroactively apply. The date at the top of this page always tells you which version of the policy you are reading.</p>
 </div>
 
-<h2>Contact</h2>
+<h2 id="contact">17. How to contact us</h2>
 <div class="card">
-<p>Questions about this policy go through the <a href="support.html">support page</a> or the project's GitHub page. Takedown requests for a specific published video should include the video id and are treated as the highest priority.</p>
+<p>Questions about this policy, requests under section 12, and takedown requests go through the project's GitHub page or the options listed on the <a href="support.html">support page</a>. Always include the application version, from the <a href="changelog.html">changelog</a>. Takedown requests for published videos should include the video id or link and are treated as the highest priority, per the process described in the <a href="terms.html">terms of service</a>.</p>
 </div>
 
 </main>

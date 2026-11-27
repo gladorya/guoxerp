@@ -55,6 +55,7 @@ nav.top a.active{color:var(--teal)}
 /* layout */
 main{max-width:1020px;margin:0 auto;padding:30px 22px 60px}
 section{margin:64px 0}
+h2{scroll-margin-top:86px}
 .kicker{color:var(--teal);font-size:12.5px;letter-spacing:2.6px;text-transform:uppercase;
   font-weight:700;margin:0 0 12px}
 .sub{color:var(--muted);font-size:16.5px;max-width:660px;margin:0 0 8px}
